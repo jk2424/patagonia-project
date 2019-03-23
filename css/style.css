@@ -13,6 +13,14 @@ License URI: http://www.themevault.net/license/
 
 @import "../fonts/font-awesome-4.7.0/css/font-awesome.min.css";
 
+.popup_content {
+  margin: 10px;
+  padding: 20px;
+  max-width: 80%;
+  border: 2px solid #ff5200;
+  background: white;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;

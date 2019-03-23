@@ -94,7 +94,7 @@
         </div>
         <img style="max-width:100%" src="images/map.png" />
         <div class="map-icon" style="padding-left:20px">
-          <a class="arrow_box">North Vista Trail</a>
+          <a class="arrow_box popup2_open">North Vista Trail</a>
         </div>
         <div class="map-icon-2" style="padding-left:20px">
           <a class="arrow_box">Easy Trail</a>
@@ -103,6 +103,35 @@
           <a class="arrow_box">Amazing Trail</a>
         </div>
       </div>
+
+      <section id="popup2" class="popup-content">
+        <div class="text-center">
+          <h2>About the Hike</h2>
+        </div>
+        <br /><br />
+        <div class="row" style="  display: flex; padding:10px">
+          <div class="column" style="flex:50%">
+            <h1>How to Get there</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+            eos, accusamus delectus harum nostrum fugiat quas tempora excepturi
+            nobis incidunt quisquam facilis, atque ullam. Quidem animi dolorem
+            quasi facere suscipit.
+            <br />
+            <h2>Fun facts</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+            eos, accusamus delectus harum nostrum fugiat quas tempora excepturi
+            nobis incidunt quisquam facilis, atque ullam. Quidem animi dolorem
+            quasi facere suscipit.
+          </div>
+          <div class="column" style="flex:50%;padding:10px">
+            <h1>Packing List</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+            eos, accusamus delectus harum nostrum fugiat quas tempora excepturi
+            nobis incidunt quisquam facilis, atque ullam. Quidem animi dolorem
+            quasi facere suscipit.
+          </div>
+        </div>
+      </section>
 
       <!---footer--->
       <footer>
@@ -124,6 +153,13 @@
           .delay(650)
           .fadeOut("slow");
       });
+      $(document).ready(function() {
+        $("#popup2").popup({
+          pagecontainer: "#page",
+          escape: false
+        });
+      });
     </script>
+    <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
   </body>
 </html>
